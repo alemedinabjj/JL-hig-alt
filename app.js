@@ -28,7 +28,7 @@ const menuNav = document.querySelector('.menu-nav')
 const listNav = document.querySelector('.menu-nav-list')
 const hamburg = document.querySelector('.icon-menu')
 const navMenu = menuNav.offsetHeight
-console.log(hamburg)
+
 
 function changeHeaderWhenScroll() {
     if(window.scrollY >= navHeight){
@@ -124,10 +124,13 @@ function activateMenuAtCurrentSection() {
       document
         .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.add('active')
+        document.querySelector('.menu-nav ul li a[href*=' + sectionId + ']').classList.add('active')
+        
     } else {
       document
         .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.remove('active')
+        document.querySelector('.menu-nav ul li a[href*=' + sectionId + ']').classList.remove('active')
     }
   }
 }

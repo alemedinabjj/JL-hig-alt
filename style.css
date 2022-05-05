@@ -161,7 +161,7 @@ ul {
 }
 .menu-nav-list {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -212,7 +212,9 @@ nav {
   nav ul li a.active {
     color: var(--base-color);
   }
-  
+  .menu-nav ul li a.active {
+      color: var(--body-color);
+  }
   nav ul li a::after {
     content: '';
     width: 0%;
